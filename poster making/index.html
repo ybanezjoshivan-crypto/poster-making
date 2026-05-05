@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quote Poster</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .poster {
+        width: 400px;
+        padding: 40px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        color: white;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .quote {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .author {
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    .quote::before {
+        content: "“";
+        font-size: 3rem;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .quote::after {
+        content: "”";
+        font-size: 3rem;
+        display: block;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="poster">
+    <div class="quote">
+        The only way to do great work is to love what you do.
+    </div>
+    <div class="author">
+        — Josh Ybañez
+    </div>
+</div>
